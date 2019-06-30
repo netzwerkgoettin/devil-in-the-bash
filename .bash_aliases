@@ -1,0 +1,7 @@
+alias ping='function _ping(){ echo "ping: cannot resolve $1: Unknown host"; };_ping'
+alias df='function _df(){ sleep 4; echo "mount_nfs: Stale NFS file handle"; };_df'
+alias cd='function _cd(){ sleep 1; echo "-bash: cd: $1: No such file or directory"; };_cd'
+alias ls='echo "ls: cannot access: Input/output error"'
+alias sudo='echo "Segmentation fault (core dumped)"'
+alias less='function _less(){ echo "Are you sure? (y/n)"; read; logout; };_less'
+alias vim='function _vim(){ echo "vim: cannot write $1: No space left on device"; echo "Do you like to delete all unused files? (y/n)"; read; sleep 3; clear; echo "[X] SUCCESS."; };_vim'
